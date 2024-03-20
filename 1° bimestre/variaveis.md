@@ -47,7 +47,20 @@ function example() {
     x = 20; // TypeError: Assignment to constant variable.
 }
 
+
 ```
+## Escopo
+
+Escopo, em programação, refere-se à visibilidade e acessibilidade de variáveis em diferentes partes do código. Em outras palavras, o escopo determina onde exatamente uma variável pode ser acessada e modificada dentro de um programa, existem três tipos de escopo: global, bloco e função.
+
+**1.** No escopo global, as variáveis são declaradas fora de qualquer bloco de código, geralmente no nível mais alto do programa, e elas podem ser acessadas de qualquer lugar no programa, incluindo dentro de funções permanecendo acessíveis enquanto o programa estiver em execução.
+O escopo global é acessível por todas as funções e blocos de código dentro do programa.
+
+**2.** O escopo de bloco foi introduzido é definido por pares de chaves {} em JavaScript.
+Variáveis declaradas dentro de um bloco de código ({}) têm escopo de bloco e só são acessíveis dentro desse bloco. Isso inclui as  variáveis declaradas com let e const.
+
+**3.** No escopo de função, as variáveis são declaradas dentro de uma função e só são acessíveis dentro dessa função. O escopo de função pode ser visto como uma extensão do escopo global, mas limitado à função onde a variável foi definida.
+
 
 
 >## Exerxício sobre o conteúdo (código):
@@ -104,7 +117,7 @@ function example() {
             let numero2 = document.getElementById("numero2").value;
 
             var escolha = document.getElementById("operacoes").value;
-            const numero1 = 10;
+            const numero1 = 10;  //valor que nao pode ser mudado
 
             if (escolha === "1") {
                 resultado.innerHTML = parseInt(numero1) + parseInt(numero2);
