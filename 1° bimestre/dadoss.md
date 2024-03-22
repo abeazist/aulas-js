@@ -90,3 +90,55 @@ console.log(valor); // Saída: undefined
 
   - [ ] Os tipos de dados primitivos são compostos por propriedades e métodos que permitem uma manipulação mais avançada e organizada dos dados.
   - [x] As Strings representam sequências de caracteres, como texto.
+  
+
+
+## Tipos Objetos 
+
+### Conceitos
+  Os tipos de dados objetos em JavaScript referem-se a estruturas de dados complexas que podem armazenar coleções de dados e métodos relacionados.
+  Ao contrário dos tipos de dados primitivos, que representam valores simples, os tipos de dados objeto são compostos por propriedades e métodos que permitem uma manipulação mais avançada e organizada dos dados.
+
+  # Objeto
+  ---
+  Um objeto em JavaScript é uma coleção de pares chave-valor, onde as chaves são strings e os valores podem ser de qualquer tipo de dado, incluindo outros objetos, arrays, funções, etc. Os objetos são utilizados para representar entidades ou conceitos do mundo real, e cada propriedade de um objeto descreve algum aspecto desse objeto.
+
+  Exemplo de objeto:
+  ```javascript
+  var pessoa = {
+    nome: "João",
+    idade: 30,
+    cidade: "São Paulo"
+};
+console.log(pessoa.nome); // Saída: João
+console.log(pessoa.idade); // Saída: 30
+console.log(pessoa.cidade); // Saída: São Paulo
+  ```
+
+# Array
+Um array em JavaScript é uma coleção ordenada de valores, onde cada valor é identificado por um índice numérico. Os arrays são usados para armazenar listas de elementos e são extremamente versáteis, permitindo a manipulação eficiente de conjuntos de dados. Os elementos de um array podem ser de qualquer tipo de dado, incluindo outros arrays, objetos, números, strings, etc.
+
+Exemplo de array:
+
+```javascript
+let numeros = [1, 2, 3, 4, 5];
+console.log(numeros[0]); // Saída: 1
+console.log(numeros.length); // Saída: 5
+```
+
+>## Exercício de fixação 
+
+Faça um esquema de lanchonete usando objetos
+
+```javascript
+var lanchonete = {
+    cliente: "Giovana",
+    endereco: "Castelo Branco 254 ",
+    cpf: 8378751521
+  };
+
+  console.log(lanchonete.cliente);
+  console.log(lanchonete.endereco);
+  console.log(lanchonete.cpf);
+```
+
