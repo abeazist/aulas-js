@@ -3,9 +3,9 @@ Beatriz Oliveira Santos
 
 ### Conceito Tipos de dados
 
-No JavaScript, existem vários tipos de dados, onde eles são divididos em duas categorias principais: tipos de **dados primitivos** e tipos de **dados objetos**. Cada tipo de dado, serve para diferentes propósitos e é útil em diferentes situações.
+No JavaScript, existem vários tipos de dados, onde eles são divididos em 3 categorias principais: tipos de **dados primitivos**, tipos de **dados objetos** e **array**. Cada tipo de dado, serve para diferentes propósitos e é útil em diferentes situações.
 
-## Tipos de dados primitivos
+## Tipos primitivos
 Os tipos primitivos, referem-se aos tipos de dados fundamentais que não são objetos e não possuem métodos ou propriedades. Eles são valores simples que são diretamente manipulados pelo sistema e geralmente têm um tamanho fixo na memória, são eles:
  
  - `number` : Representa valores numéricos, como inteiros e números de ***ponto flutuante***.
@@ -67,3 +67,26 @@ console.log(valor); // Saída: undefined
 ```
 
 >## Exerxício de fixação sobre o conteúdo:
+
+**1.** Assinale as alternativas corretas e justifique as erradas:
+
+  - [ ] Existem no javascript 2 tipos de categorias principais de dados: O tipo primitivo, e o tipo de objetos
+    
+  - [ ] O tipo `boolean` retorna apenas valores falsos, pois o javascript entende que nenhum valor verdadeiro pode ser retornado dentro desse tipo de dado.
+  - [ ] O tipo `undefined` e `null` possuem a mesma função, não se diferenciando em nenhum aspecto.
+  - [ ] Os tipos de dados primitivos são compostos por propriedades e métodos que permitem uma manipulação mais avançada e organizada dos dados.
+  - [ ] As Strings representam sequências de caracteres, como texto.
+
+**Gabarito**
+
+  - [x] Existem no javascript 3 tipos de categorias principais de dados: O tipo primitivo, o tipo de objetos e o array.
+    
+  - [ ] O tipo `boolean` retorna apenas valores falsos, pois o javascript entende que nenhum valor verdadeiro pode ser retornado dentro desse tipo de dado.  
+  **Errado**: O tipo boolean pode retornar tanto true quanto false, representando valores lógicos verdadeiros e falsos, respectivamente.
+
+  - [ ] O tipo `undefined` e `null` possuem a mesma função, não se diferenciando em nenhum aspecto.     
+  **Errado**: Embora ambos `undefined` e `null` representem a ausência de valor, eles são conceitualmente diferentes. undefined é atribuído automaticamente a variáveis que não foram inicializadas, enquanto null é atribuído manualmente para indicar explicitamente a ausência de valor.  
+  **Errado**: Os tipos de dados primitivos em JavaScript são valores simples que não são objetos e, portanto, não possuem métodos ou propriedades.
+
+  - [ ] Os tipos de dados primitivos são compostos por propriedades e métodos que permitem uma manipulação mais avançada e organizada dos dados.
+  - [x] As Strings representam sequências de caracteres, como texto.
