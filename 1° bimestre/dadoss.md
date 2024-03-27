@@ -188,12 +188,6 @@ let divisao = a / b; // Divisão
 let modulo = a % b; // Módulo (resto da divisão)
 ```
 
-- Atribuição: Usado para atribuir valores a variáveis. Exemplo: = (atribuição simples), += (adição e atribuição), -= (subtração e atribuição), *= (multiplicação e atribuição), entre outros.
-```javascript
-let x = 10;
-x += 5; // Equivalente a: x = x + 5;
-```
-
 - Comparação: Utilizado para comparar valores e produzir um valor lógico (verdadeiro ou falso) como resultado. Exemplos incluem == (igual a), != (diferente de), > (maior que), < (menor que), >= (maior ou igual a), <= (menor ou igual a).
 
 ```javascript
@@ -225,25 +219,11 @@ if (salario > 3000 || horasTrabalhadas > 40) {
     console.log("Você ganha um salário alto ou trabalha muitas horas.");
 }
 ```
-- Incremento e Decremento: Utilizado para aumentar ou diminuir o valor de uma variável por uma unidade. Exemplos incluem ++ (incremento) e -- (decremento).
+- Typeof: é um operador em JavaScript que permite verificar o tipo de dado de uma variável ou expressão. Ele retorna uma string indicando o tipo de dado.
   ```javascript
-  let contador = 0;
-
-  contador++; // Incremento de 1 (equivale a: contador = contador + 1;)
-  contador--; // Decremento de 1 (equivale a: contador = contador - 1;)
-
-
-
-- Concatenação: Usado para unir duas ou mais strings em uma única string. Em JavaScript, o operador de concatenação é +.
-
-```javascript
-let nome = "João";
-let sobrenome = "Silva";
-
-let nomeCompleto = nome + " " + sobrenome;
-console.log(nomeCompleto); // Saída: João Silva
-
-```
+  let x = 10;
+  console.log(typeof x); // Saída: "number"
+  ```
 
 >## Exercício de fixação (operadores básicos)
 
