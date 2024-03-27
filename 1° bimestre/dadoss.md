@@ -119,17 +119,32 @@ console.log(pessoa.cidade); // Saída: São Paulo
 # Array
 Um array em JavaScript é uma coleção ordenada de valores, onde cada valor é identificado por um índice numérico. Os arrays são usados para armazenar listas de elementos e são extremamente versáteis, permitindo a manipulação eficiente de conjuntos de dados. Os elementos de um array podem ser de qualquer tipo de dado, incluindo outros arrays, objetos, números, strings, etc.
 
-Exemplo de array:
+Exemplos de array:
 
 ```javascript
 let numeros = [1, 2, 3, 4, 5];
 console.log(numeros[0]); // Saída: 1
 console.log(numeros.length); // Saída: 5
+
+let matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+let frutas = ["Maçã", "Banana", "Morango", "Abacaxi"];
+
+let pessoas = [
+    { nome: "João", idade: 30 },
+    { nome: "Maria", idade: 25 },
+    { nome: "Pedro", idade: 35 }
+];
 ```
+
 
 >## Exercício de fixação (objetos e array)
 
-Faça um esquema de lanchonete usando objetos
+Faça um esquema de lanchonete usando tipos de dados objetos e array:
 
 ```javascript
 var lanchonete = {
@@ -148,9 +163,102 @@ var lanchonete = {
   console.log(lanchonete.cliente.nome);
   console.log(lanchonete.cliente.endereco);
   console.log(lanchonete.cliente.cpf);
-  
+
   console.log(lanchonete.pedidos.itens[0].nome);
   console.log(lanchonete.pedidos.itens[0].preco);
 
 ```
+# Operadores Básicos
 
+## Conceito de Operadores Básicos
+Operadores básicos, em programação, são símbolos ou palavras reservadas que permitem realizar operações sobre variáveis e valores. Eles são fundamentais para a execução de cálculos, comparações, atribuições e outras operações em um programa.
+
+Aqui estão alguns dos operadores básicos mais comuns:
+
+- Aritméticos: São usados para realizar operações matemáticas simples, como adição, subtração, multiplicação e divisão. Exemplos incluem + (adição), - (subtração), * (multiplicação), / (divisão) e % (módulo).
+
+```javascript
+let a = 10;
+let b = 5;
+
+let soma = a + b; // Adição
+let subtracao = a - b; // Subtração
+let multiplicacao = a * b; // Multiplicação
+let divisao = a / b; // Divisão
+let modulo = a % b; // Módulo (resto da divisão)
+```
+
+- Atribuição: Usado para atribuir valores a variáveis. Exemplo: = (atribuição simples), += (adição e atribuição), -= (subtração e atribuição), *= (multiplicação e atribuição), entre outros.
+```javascript
+let x = 10;
+x += 5; // Equivalente a: x = x + 5;
+```
+
+- Comparação: Utilizado para comparar valores e produzir um valor lógico (verdadeiro ou falso) como resultado. Exemplos incluem == (igual a), != (diferente de), > (maior que), < (menor que), >= (maior ou igual a), <= (menor ou igual a).
+
+```javascript
+let idade = 20;
+
+// Verifica se idade é maior que 18
+if (idade > 18) {
+    console.log("Você é maior de idade.");
+}
+
+// Verifica se idade é igual a 18
+if (idade === 18) {
+    console.log("Você tem 18 anos.");
+}
+```
+
+- Lógicos: São usados para combinar ou negar valores lógicos. Exemplos incluem && (e lógico), || (ou lógico), ! (negação lógica).
+```javascript
+let salario = 3000;
+let horasTrabalhadas = 40;
+
+// Verifica se o salário é maior que 2000 E as horas trabalhadas são maiores que 30
+if (salario > 2000 && horasTrabalhadas > 30) {
+    console.log("Você tem um bom salário e trabalha bastante.");
+}
+
+// Verifica se o salário é maior que 3000 OU as horas trabalhadas são maiores que 40
+if (salario > 3000 || horasTrabalhadas > 40) {
+    console.log("Você ganha um salário alto ou trabalha muitas horas.");
+}
+```
+- Incremento e Decremento: Utilizado para aumentar ou diminuir o valor de uma variável por uma unidade. Exemplos incluem ++ (incremento) e -- (decremento).
+  ```javascript
+  let contador = 0;
+
+  contador++; // Incremento de 1 (equivale a: contador = contador + 1;)
+  contador--; // Decremento de 1 (equivale a: contador = contador - 1;)
+
+
+
+- Concatenação: Usado para unir duas ou mais strings em uma única string. Em JavaScript, o operador de concatenação é +.
+
+```javascript
+let nome = "João";
+let sobrenome = "Silva";
+
+let nomeCompleto = nome + " " + sobrenome;
+console.log(nomeCompleto); // Saída: João Silva
+
+```
+
+>## Exercício de fixação (operadores básicos)
+
+Faça o calculo do IMC (Índice de Massa Corporal) de uma pessoa, com base no peso e na altura do usuário.
+
+```javascript
+let peso = prompt("Digite o seu peso em quilogramas:");
+let altura = prompt("Digite a sua altura em metros:");
+
+peso = parseFloat(peso);
+altura = parseFloat(altura);
+
+let imc = peso / (altura * altura);
+imc = imc.toFixed(2);
+
+// Exibe o IMC calculado para o usuário
+console.log("Seu IMC é: " + imc);
+```
