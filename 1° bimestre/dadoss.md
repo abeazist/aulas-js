@@ -66,7 +66,7 @@ let valor; // Undefined
 console.log(valor); // Saída: undefined
 ```
 
->## Exerxício de fixação sobre o conteúdo:
+>## Exerxício de fixação sobre o conteúdo (dados primitivos):
 
 **1.** Assinale as alternativas corretas e justifique as erradas:
 
@@ -88,7 +88,8 @@ console.log(valor); // Saída: undefined
   **Errado**: Embora ambos `undefined` e `null` representem a ausência de valor, eles são conceitualmente diferentes. undefined é atribuído automaticamente a variáveis que não foram inicializadas, enquanto null é atribuído manualmente para indicar explicitamente a ausência de valor.  
   **Errado**: Os tipos de dados primitivos em JavaScript são valores simples que não são objetos e, portanto, não possuem métodos ou propriedades.
 
-  - [ ] Os tipos de dados primitivos são compostos por propriedades e métodos que permitem uma manipulação mais avançada e organizada dos dados.
+  - [ ] Os tipos de dados primitivos são compostos por propriedades e métodos que permitem uma manipulação mais avançada e organizada dos dados.     
+**Errado**: Os tipos de dados primitivos em JavaScript são valores simples que não são objetos e, portanto, não possuem métodos ou propriedades.
   - [x] As Strings representam sequências de caracteres, como texto.
   
 
@@ -126,19 +127,30 @@ console.log(numeros[0]); // Saída: 1
 console.log(numeros.length); // Saída: 5
 ```
 
->## Exercício de fixação 
+>## Exercício de fixação (objetos e array)
 
 Faça um esquema de lanchonete usando objetos
 
 ```javascript
 var lanchonete = {
-    cliente: "Giovana",
-    endereco: "Castelo Branco 254 ",
-    cpf: 8378751521
-  };
+    cliente: {
+        nome: "Giovana",
+        endereco: "Castelo Branco 254",
+        cpf: "837.875.152-10"
+    },
+    pedidos: {
+       itens: [
+            { nome: "X-Burger", preco: 15.50 },
+            { nome: "Refrigerante", preco: 5.00 }
+        ]
+    }
+}
+  console.log(lanchonete.cliente.nome);
+  console.log(lanchonete.cliente.endereco);
+  console.log(lanchonete.cliente.cpf);
+  
+  console.log(lanchonete.pedidos.itens[0].nome);
+  console.log(lanchonete.pedidos.itens[0].preco);
 
-  console.log(lanchonete.cliente);
-  console.log(lanchonete.endereco);
-  console.log(lanchonete.cpf);
 ```
 
